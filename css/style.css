@@ -1,0 +1,656 @@
+/* GLOBAL
+========================================= */
+
+html {
+  background-color: #fff;
+  font-family: "Lato", "Arial", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 300;
+  word-spacing: 8px;
+}
+
+h1 {
+  color: #eee;
+}
+
+h2 {
+  color: #333333;
+  font-size: 250%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #05cdfe;
+  width: 100px;
+  content: " ";
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 160%;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+section {
+  padding: 30px 0 60px 0;
+}
+
+/* HEADER
+========================================= */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  height: 50px;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 15px;
+}
+
+#zanzibar {
+  font-family: "warnesregular";
+  font-size: 30px;
+  margin-left: 1.3em;
+}
+
+header {
+  background-image: linear-gradient(
+      rgba(0, 242, 96, 0.4),
+      rgba(7, 117, 230, 0.3)
+    ),
+    url(../images/header.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #000 !important;
+}
+
+.home-title {
+  position: absolute;
+  top: 30%;
+  left: 12.3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-title h1 {
+  font-size: 340%;
+  color: #fff;
+}
+
+.home-title h1 span {
+  font-weight: 700;
+}
+
+.home-title p {
+  color: #fff;
+}
+
+/* Buttons */
+header .btn {
+  display: inline-flex;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 1s, color 1s, border 1s;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 1s, color 1s, border 1s;
+}
+
+.btn-full {
+  background-color: azure;
+  color: #04a8d1;
+  margin-right: 15px;
+}
+
+.btn-ghost {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-full:hover {
+  background-color: #04a8d1;
+  color: #fff;
+}
+
+.btn-ghost:hover {
+  background-color: #04a8d1;
+  border: 1px solid #5ee077;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 160px;
+}
+
+/* Qui sommes-nous
+========================================= */
+#contenu-qui {
+  display: flex;
+  flex-direction: row;
+}
+
+#qui-singe {
+  max-width: 40%;
+}
+
+#qui-texts {
+  max-width: 40%;
+}
+
+.qui-texts-plus {
+  margin: 20px 0;
+  display: flex;
+}
+
+.qui-texts-plus:hover .qui-texts-icon {
+  color: #575757;
+  transform: translateX(20px);
+}
+
+.qui-texts-icon {
+  font-size: 34px;
+  color: #da2c13;
+  transition: all 1s;
+}
+
+.qui-text-icon-gauche {
+  max-width: 17%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.qui-text-texts-droit {
+  max-width: 83%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Notre île
+=========================================== */
+
+#notre-ile {
+  background-color: #0ce0f5;
+}
+
+.notre-ile-lieux {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.notre-ile-lieu {
+  max-width: 30.333333%;
+  padding: 0 15px;
+}
+
+.lieu-details {
+  background-color: #fff;
+  padding: 30px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.lieu-details img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.lieu-details h4 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* GALERIE PHOTOS
+=========================================== */
+.photos-lignes {
+  display: flex;
+  padding: 0 15px;
+}
+#photos-ligne1-gauche {
+  width: 34%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#photos-ligne1-droite {
+  width: 66%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#photos-ligne2-gauche {
+  width: 41%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#photos-ligne2-milieu {
+  width: 25%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#photos-ligne2-droite {
+  width: 34%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.galeries-img {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+.galeries-titre {
+  position: relative;
+  text-align: center;
+  top: 20px;
+  left: 30px;
+  width: 50%;
+  
+}
+
+.galeries-titre h4 {
+  color: #fff;
+  font-weight: bold;
+  
+  padding: 5px;
+}
+
+/* TEMOIGNAGES CLIENTS
+=========================================== */
+.temoignages {
+  display: flex;
+  padding: 0 15px;
+}
+.temoignages-clients {
+  width: 33.3333%;
+  padding: 0 15px;
+}
+.clients {
+  background-image: linear-gradient(
+      rgba(0, 242, 96, 0.4),
+      rgba(7, 117, 230, 0.3)
+    ),
+    url(../images/the-paysage.jpg);
+  background-size: cover;
+  background-attachment:local;
+}
+
+.clients h2 {
+  color: #fff;
+}
+
+.clients h2:after {
+  background-color: #fff;
+}
+
+blockquote {
+  padding: 5px;
+  font-style: italic;
+  line-height: 130%;
+  color: #fff;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 800%;
+  font-family: "Sanchez", serif;
+  position: relative;
+  top: 72px;
+  left: -13px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+cite {
+  font-size: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+cite img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* NOS SEJOURS
+=========================================== */
+.sejours {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.sejour {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.sejour h3 {
+  color: black;
+  font-weight: 400;
+}
+
+.sejour h4 {
+  font-size: 200%;
+  font-weight: 100;
+}
+
+.sejour span {
+  font-weight: 100;
+  font-size: 40%;
+  position: relative;
+  top: -15px;
+  left: 2px;
+}
+
+.sejour-premium {
+  background-color: #0ce0f5;
+  color: #fff;
+}
+
+.sejour-title {
+  padding: 10px 10px 0 10px;
+  border-bottom: 1px solid #e3e0e0;
+}
+
+.sejour-title-premium {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  background-color: #fff;
+  color: green;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.sejour-content ul {
+  list-style: none;
+  padding: 20px;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.sejour-content ul li i {
+  font-size: 90%;
+  margin-right: 10px;
+}
+
+.sejour-signup {
+  text-align: center;
+}
+
+.sejour-signup:hover .btn-sejour {
+  background-color: #05cdfe;
+  color: #fff;
+}
+
+.btn-sejour {
+  background-color: #04a8d1;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* CONTACT
+=========================================== */
+.contact-infos {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.champs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.carte {
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+textarea {
+  resize: none;
+}
+
+.adress {
+  margin-left: 90px;
+}
+
+.contact-form1 {
+  display: flex;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-form2 {
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-message {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form {
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-contact {
+  background-color: #04a8d1;
+  color: #fff;
+  margin: 15px;
+  border: none;
+}
+
+/* FOOTER
+=========================================== */
+
+footer {
+  background-color: #000;
+  color: #fff;
+  height: 60px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/*********************** RESPONSIVE ******************************/
+
+@media screen and (max-width: 767px) {
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 23vh;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  nav ul li {
+    padding: 5px;
+  }
+
+  .home-title {
+    top: 50%;
+    left: 10%;
+  }
+
+  #qui-singe {
+    position: absolute;
+    max-width: 100%;
+    opacity: 50%;
+    z-index: -1;
+  }
+
+  #qui-texts {
+    max-width: 100%;
+  }
+
+  .photos-lignes {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  #photos-ligne1-gauche {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  #photos-ligne1-droite {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  #photos-ligne2-gauche {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0px;
+  }
+
+  #photos-ligne2-milieu {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  #photos-ligne2-droite {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  iframe {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sejours {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .container {
+    margin: 0 40px;
+  }
+
+  .notre-ile-lieu {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .temoignages {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .temoignages-clients {
+    width: 60%;
+    padding: 0px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-infos {
+    flex-direction: column;
+  }
+
+  .contact-largeur {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0px;
+    flex-direction: column;
+  }
+
+  .contact-form1 {
+    padding-left: 0px;
+    margin-bottom: 30px;
+  }
+
+  .champs {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+}
